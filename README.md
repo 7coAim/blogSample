@@ -1,2 +1,1 @@
-# BlogSample
-## Rails学習用
+BlogSample（Rails学習用）
