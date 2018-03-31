@@ -69,6 +69,7 @@ table {
   font-size: 14px;
   width: 700px;
   color: #111111;
+  table-layout: fixed;
 }
 
 table th.t_top {
@@ -85,12 +86,5 @@ table td.t_line01 {
   vertical-align: top;
   text-align: left;
   padding: 1px;
-}
-
-table td.t_line02 {
-  border: #dcdddd 1px dashed;
-  background-color: #ffffff;
-  vertical-align: top;
-  text-align: left;
-  padding: 1px;
+  word-wrap: break-word;
 }
