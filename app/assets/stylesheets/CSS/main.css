@@ -1,0 +1,96 @@
+html {
+  font-size: 80%;
+  height: 100%;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+}
+
+p.notice {
+  padding: 3px;
+  font: bold;
+  color: red;
+}
+
+button.new_blog_path {
+  display: inline-block;
+  text-decoration: none;
+  background: #87befd;
+  color: #FFF;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 5px #87befd;
+  border: dashed 1px #FFF;
+  transition: .4s;
+}
+
+button.new_blog_path:hover {
+  background: #668ad8;
+  box-shadow: 0px 0px 0px 5px #668ad8;
+}
+
+button.blogs_path {
+  display: inline-block;
+  text-decoration: none;
+  color: #668ad8;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #668ad8;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .6s;
+}
+
+button.blogs_path:hover {
+  background: #668ad8;
+}
+
+div#error_explanation {
+  padding: 2px;
+  font: bold;
+  color: red;
+}
+
+table {
+  border: #dcdddd 1px solid;
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 700px;
+  color: #111111;
+}
+
+table th.t_top {
+  border: #dcdddd 1px dashed;
+  background-color: #efefef;
+  text-align: left;
+  padding: 1px;
+  font: bold;
+}
+
+table td.t_line01 {
+  border: #dcdddd 1px dashed;
+  background-color: #ffffff;
+  vertical-align: top;
+  text-align: left;
+  padding: 1px;
+}
+
+table td.t_line02 {
+  border: #dcdddd 1px dashed;
+  background-color: #ffffff;
+  vertical-align: top;
+  text-align: left;
+  padding: 1px;
+}
