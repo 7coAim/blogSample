@@ -18,25 +18,25 @@
       <colgroup>
         <col style="width:30%;">
         <col style="width:50%;">
-        <col style="width:28%;">
-        <col style="width:28%;">
-        <col style="width:28%;">
+        <col style="width:10%;">
+        <col style="width:10%;">
+        <col style="width:10%;">
       </colgroup>
       <tbody>
         <tr>
           <th class="t_top">タイトル</th>
           <th class="t_top">内容</th>
-          <th class="t_top">詳細確認</th>
-          <th class="t_top">編集</th>
-          <th class="t_top">削除</th>
+          <th class="t_top"></th>
+          <th class="t_top"></th>
+          <th class="t_top"></th>
         </tr>
         <% @blogs.each do |blog| %>
           <tr>
             <td class="t_line01"><%= blog.title %></td>
             <td class="t_line01"><%= blog.content %></td>
-            <td class="t_line01"><%= link_to '詳細を確認する', blog_path(blog.id) %></td>
-            <td class="t_line01"><%= link_to "ブログを編集する", edit_blog_path(blog.id) %></td>
-            <td class="t_line01"><%= link_to 'ブログを削除する', blog_path(blog.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></td>
+            <td class="t_line01"><%= link_to '確認', blog_path(blog.id) %></td>
+            <td class="t_line01"><%= link_to "編集", edit_blog_path(blog.id) %></td>
+            <td class="t_line01"><%= link_to '削除', blog_path(blog.id), method: :delete ,data: { confirm: '本当に削除していいですか？' } %></td>
           </tr>
         <% end %>
       </tbody>
